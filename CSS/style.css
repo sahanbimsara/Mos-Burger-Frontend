@@ -1,0 +1,77 @@
+body{
+    margin: 0;
+    height: 100vh;  /* vh = view point height */
+    overflow: hidden;
+}
+
+.navbar{
+    padding: 1rem 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,1);
+}
+
+.navbar-brand span{
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.nav-links{
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: #666;
+    font-weight: 500;
+}
+
+
+/* main content */
+
+.main-content{
+    height: calc(100vh - 80px);
+}
+
+.left-side{
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 4rem;
+}
+
+.title{
+    font-size: 4rem;
+    font-weight: 900;
+    color:black;
+}
+.login-btn{
+    background: #333;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    font-weight: 600;
+    width: fit-content;
+}
+
+.login-btn:hover{
+    background-color: #555;
+    color: white;
+}
+.right-side{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.burger-box{
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.burger-img{
+    width: 300px;
+    height: auto;
+}
