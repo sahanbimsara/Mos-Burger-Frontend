@@ -1,38 +1,41 @@
-body{
+body {
     margin: 0;
-    height: 100vh;  /* vh = view point height */
+    height: 100vh;
     overflow: hidden;
 }
 
-.navbar{
+/* Navigation */
+.navbar {
     padding: 1rem 0;
-    box-shadow: 0 2px 10px rgba(0,0,0,1);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
-.navbar-brand span{
+.navbar-brand span {
     font-size: 1.5rem;
     color: #333;
 }
 
-.nav-links{
+.nav-links {
     display: flex;
     gap: 2rem;
 }
 
-.nav-link{
+.nav-link {
     text-decoration: none;
     color: #666;
     font-weight: 500;
 }
 
+.nav-link:hover {
+    color: #333;
+}
 
-/* main content */
-
-.main-content{
+/* Main Content */
+.main-content {
     height: calc(100vh - 80px);
 }
 
-.left-side{
+.left-side {
     background: white;
     display: flex;
     flex-direction: column;
@@ -40,12 +43,15 @@ body{
     padding-left: 4rem;
 }
 
-.title{
+.title {
     font-size: 4rem;
     font-weight: 900;
-    color:black;
+    color: #333;
+    line-height: 0.9;
+    margin-bottom: 2rem;
 }
-.login-btn{
+
+.login-btn {
     background: #333;
     color: white;
     border: none;
@@ -55,23 +61,26 @@ body{
     width: fit-content;
 }
 
-.login-btn:hover{
-    background-color: #555;
+.login-btn:hover {
+    background: #555;
     color: white;
 }
-.right-side{
-    background-color: white;
+
+.right-side {
+    background: #f5f5f5;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.burger-box{
+
+.burger-box {
     background: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
-.burger-img{
-    width: 300px;
+
+.burger-img {
+    width: 500px;
     height: auto;
 }
