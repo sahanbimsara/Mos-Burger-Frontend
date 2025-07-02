@@ -4,14 +4,23 @@ document.getElementById('loginForm').addEventListener('submit', function(e) {
     const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;
 
-    //demo login username and password
+    // demo login username and password
     const validUsername = 'admin';
     const validPassword = '1234';
 
     if (username === validUsername && password === validPassword) {
-        alert('Login successful!');
-        window.location.href = 'order.html'; // Redirect to home page
+        Swal.fire({
+            icon: 'success',
+            title: 'Login successful!',
+            text: `Welcome, ${username}!`
+        }).then(() => {
+            window.location.href = 'order.html'; // Redirect after closing alert
+        });
     } else {
-        alert('Invalid username or password');
+        Swal.fire({
+            icon: 'error',
+            title: 'Login failed',
+            text: 'Invalid username or password'
+        });
     }
 });
